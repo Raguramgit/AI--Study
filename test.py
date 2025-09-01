@@ -52,3 +52,8 @@ else:
     print("You cannot buy anything") '''
 
 # Looping in Python
+for i in range(1,5):
+    print(i)
+while i< 10:
+    print(i)
+    i += 1 
