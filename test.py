@@ -52,8 +52,18 @@ else:
     print("You cannot buy anything") '''
 
 # Looping in Python
-for i in range(1,5):
+''' for i in range(1,5):
     print(i)
-while i< 10:
+while i < 10:
     print(i)
-    i += 1 
+    i +=1 '''
+
+# Functions in Python
+''' a = 1
+b = 2 
+def add(a, b):
+    c = a + b
+    return c
+print(add(a, b)) '''
+
+# Error handling in Python
