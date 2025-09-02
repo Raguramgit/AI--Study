@@ -67,3 +67,38 @@ def add(a, b):
 print(add(a, b)) '''
 
 # Error handling in Python
+''' try:
+    a = int (input("Enter a number :"))
+    b = int (input("Enter another number :"))
+    c = a / b
+    print(c)
+except Exception as r:
+    raise r
+
+else:
+    print("No error occured")
+finally:
+    print("Execution completed") '''
+
+#File Handling in Python
+#Reading and Writing Files
+#Opening a File
+''' file = open("note.txt", "r")
+#Reading the File
+content = file.read()
+print(content)
+# writing to a file write mode
+file = open("note.txt" , "w")
+file.write("I am learning python file handling.")
+file.close()
+# writing to a file append mode
+file = open("note.txt" , "a")
+file.write("I am learning python file handling.")
+file.write("\nI need to practice more.")
+file.write("\nI will become good in python file handling.")
+file.close()
+# using with statement to open a file
+with open("note.txt", "r") as file:
+    content = file.read()
+    print(content)
+    file.close() '''
