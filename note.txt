@@ -1,3 +1,0 @@
-I am learning python file handling.
-I need to practice more.
-I will become good in python file handling.

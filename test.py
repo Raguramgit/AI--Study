@@ -83,7 +83,7 @@ finally:
 #File Handling in Python
 #Reading and Writing Files
 #Opening a File
-''' file = open("note.txt", "r")
+file = open("note.txt", "r")
 #Reading the File
 content = file.read()
 print(content)
@@ -101,13 +101,15 @@ file.close()
 with open("note.txt", "r") as file:
     content = file.read()
     print(content)
-    file.close() '''
+    file.close()
+    import os
+os.remove("note.txt")
 
 # Mastering File Handling in Python using OS and Importing Custom Modules
-import os
+''' import os
 os.getcwd()
 os.listdir()
 #os.mkdir("Code")
 from Code.package import add, sub
 print(add(5, 3))
-print(sub(5, 3))
+print(sub(5, 3)) '''
