@@ -64,6 +64,7 @@ def copy_dest_file():
         pyautogui.hotkey("alt", "f4")
         time.sleep(2)
 print(f"Destination file created at {DST_PATH}")
+pyautogui.hotkey("alt", "f4")
 
 def main():
     write_to_source_file()
