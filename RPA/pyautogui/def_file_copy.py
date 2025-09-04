@@ -1,6 +1,6 @@
 import time
 import os
-import pyautogui 
+import pyautogui
 
 # Define source and destination file paths
 
@@ -10,8 +10,6 @@ DST_PATH = "C:\Ragu\AI\AI- Study\RPA\pyautogui\destination.txt"
 # Content to write to the source file
 LINES = [
     "Thala Ajith (Ajith Kumar) is an Indian actor and a passionate motorcycling enthusiast.\n",
-    "His motor vlogs often showcase disciplined group riding, road safety, and long-distance journeys.\n",
-    "Fans enjoy his calm narration, scenic routes, and dedication to two-wheeled adventures.\n"
 ]
 
 # create blank notepad file
