@@ -1,6 +1,6 @@
 import random
 
-# Sangi manki Hotel Menu
+# Sangi Manki Hotel Menu
 menu = {
     "Biryani": 120,
     "Parotta": 50,
@@ -32,7 +32,7 @@ def buy_item(item, money):
         print("Vadivelu:", random.choice(success_dialogues))
     else:
         shortage = price - money
-        print("Vadivelu:", random.choice(fail_dialogues).format(short=shortage))
+        print("Vadivelu:", random.choice(fail_dialogues))
 
 
 # Main Program
