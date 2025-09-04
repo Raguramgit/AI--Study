@@ -102,8 +102,8 @@ with open("note.txt", "r") as file:
     content = file.read()
     print(content)
     file.close()
-    import os
-os.remove("note.txt")
+    #import os
+#os.remove("note.txt")
 
 # Mastering File Handling in Python using OS and Importing Custom Modules
 ''' import os
