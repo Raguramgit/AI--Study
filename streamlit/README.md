@@ -62,7 +62,7 @@ pip install streamlit
 Run the Streamlit app locally:
 
 ```bash
-streamlit run app.py
+streamlit run Hotel.py
 ```
 
 This opens the app in your default browser (usually at `http://localhost:8501`).
@@ -92,15 +92,15 @@ You can customize:
 1. Push your repo to GitHub.
 2. Go to [Streamlit Community Cloud](https://share.streamlit.io) and sign in.
 3. Create a new app and point it to your GitHub repository and branch.
-4. Set the main file to `app.py` and deploy.
+4. Set the main file to `Hotel.py` and deploy.
 
-If GIFs are used, make sure they are included in the repo (in the same folder as `app.py`).
+If GIFs are used, make sure they are included in the repo (in the same folder as `Hotel.py`).
 
 ---
 
 ## Example `app.py`
 
-> The repository already includes the full `app.py` implementation. Below is a short excerpt of the main behaviour:
+> The repository already includes the full `Hotel.py` implementation. Below is a short excerpt of the main behaviour:
 
 ```python
 # Example excerpt
