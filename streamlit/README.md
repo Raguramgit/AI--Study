@@ -15,7 +15,7 @@ A simple Streamlit app that simulates ordering from a small local "Sangi Manki H
 
 ## Files
 
-* `app.py` — Main Streamlit application (the code you provided).
+* `Hotel.py` — Main Streamlit application (the code you provided).
 * `vadivelu_success.gif` — (optional) Local GIF shown on successful order.
 * `vadivelu_fail.gif` — (optional) Local GIF shown on failed order.
 
