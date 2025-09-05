@@ -4,8 +4,8 @@ import pyautogui
 
 # Define source and destination file paths
 
-SRC_PATH = "C:\Ragu\AI\AI- Study\RPA\pyautogui\source.txt"
-DST_PATH = "C:\Ragu\AI\AI- Study\RPA\pyautogui\destination.txt"
+SRC_PATH = "C:\Ragu\AI\AI_Study\RPA\pyautogui\source.txt"
+DST_PATH = "C:\Ragu\AI\AI_Study\RPA\pyautogui\destination.txt"
 
 # Content to write to the source file
 LINES = [
@@ -20,13 +20,14 @@ def create_notepad_file():
     time.sleep(2)
     pyautogui.press("enter")
     time.sleep(2)
+    pyautogui.hotkey("ctrl", "n")
+    time.sleep(2)
 
 # Write content to the source file
 def write_to_source_file():
     create_notepad_file()
     for line in LINES:
         pyautogui.write(line)
-        pyautogui.press("enter")
         time.sleep(2)
         pyautogui.hotkey("ctrl", "s")
         time.sleep(2)
@@ -35,36 +36,37 @@ def write_to_source_file():
         pyautogui.press("enter")
         time.sleep(2)
         pyautogui.hotkey("alt", "f4")
-        time.sleep(2)
-    print(f"Source file created at {SRC_PATH}")
+        time.sleep(2)  
+        print(f"Source file created at {SRC_PATH}")
 
 # Copy content from source to destination file
 def copy_dest_file():
-        create_notepad_file()
-        pyautogui.hotkey("ctrl", "o")
-        time.sleep(2)
-        pyautogui.write(SRC_PATH)
-        time.sleep(2)
-        pyautogui.press("enter")
-        time.sleep(2)
-        pyautogui.hotkey("ctrl", "a")
-        time.sleep(2)
-        pyautogui.hotkey("ctrl", "c")
-        time.sleep(2)
-        pyautogui.hotkey("ctrl", "n")
-        time.sleep(2)
-        pyautogui.hotkey("ctrl", "v")
-        time.sleep(2)
-        pyautogui.hotkey("ctrl", "s")
-        time.sleep(2)
-        pyautogui.write(DST_PATH)
-        time.sleep(2)
-        pyautogui.press("enter")
-        time.sleep(2)
-        pyautogui.hotkey("alt", "f4")
-        time.sleep(2)
-print(f"Destination file created at {DST_PATH}")
-pyautogui.hotkey("alt", "f4")
+    create_notepad_file()
+    time.sleep(2)
+    pyautogui.hotkey("ctrl", "o")
+    time.sleep(2)
+    pyautogui.write(SRC_PATH)
+    time.sleep(2)
+    pyautogui.press("enter")
+    time.sleep(2)
+    pyautogui.hotkey("ctrl", "a")
+    time.sleep(2)
+    pyautogui.hotkey("ctrl", "c")
+    time.sleep(2)
+    pyautogui.hotkey("ctrl", "n")
+    time.sleep(2)
+    pyautogui.hotkey("ctrl", "v")
+    time.sleep(2)
+    pyautogui.hotkey("ctrl", "s")
+    time.sleep(2)
+    pyautogui.write(DST_PATH)
+    time.sleep(2)
+    pyautogui.press("enter")
+    time.sleep(2)
+    pyautogui.hotkey("alt", "f4")
+    time.sleep(2)  
+    print(f"Destination file created at {DST_PATH}")
+        
 
 def main():
     write_to_source_file()
