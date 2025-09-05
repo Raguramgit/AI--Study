@@ -8,10 +8,10 @@ import pyautogui
 app = Flask(__name__)
 
 # --- Configuration: adjust these for your screen ---
-SEARCH_QUERY = "Pro Kabaddi score"
+SEARCH_QUERY = "Gen AI Leatest News"
 # Example click coordinates for your screen (change these)
-CLICK_X = 379
-CLICK_Y = 831
+CLICK_X = 246
+CLICK_Y = 671
 # -------------------------------------------------
 
 # Simple HTML page with a button to trigger the script
@@ -86,4 +86,4 @@ def run():
 
 if __name__ == "__main__":
     # Run in debug=False when running actual automation to avoid multiple reloads/threads
-    app.run(host="127.0.0.1", port=5000, debug=False)
+    app.run(host="127.0.0.1", port=5000, debug=True)
